@@ -1,0 +1,10 @@
+dj-database-url==0.2.1
+Django==1.4.2
+south==0.7.6
+tagging
+cms
+mptt
+menus
+sekizai
+reversion
+zinnia
