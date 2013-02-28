@@ -56,7 +56,7 @@ STATIC_ROOT = os.path.join(PROJECT_PATH, "core/static")
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = '/core/static/'
+STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
@@ -93,7 +93,6 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'cms.middleware.multilingual.MultilingualURLMiddleware',
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.user.CurrentUserMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',
@@ -144,6 +143,7 @@ INSTALLED_APPS = (
     'menus',
     'south',
     'sekizai',
+    'djangocms_utils',
     'cms.plugins.file',
     'cms.plugins.flash',
     'cms.plugins.googlemap',
@@ -156,7 +156,9 @@ INSTALLED_APPS = (
     'cms.plugins.twitter',
     'reversion',
     'zinnia',
+    'cmsplugin_zinnia',
 )
+
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
