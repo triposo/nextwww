@@ -1,0 +1,67 @@
+
+
+#hero {
+  background: #dfdfdc;
+  height: 590px;
+  overflow: hidden;
+  position: relative;
+}
+
+#hero .photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  display: block;
+  max-width: none;
+}
+
+#hero .tagline {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  z-index: 2;
+  width: 450px;
+  margin-left: -225px;
+}
+
+#hero .tagline h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 56px;
+  line-height: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #fff;
+}
+
+#hero .tagline h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 100;
+}
+
+#hero .cta {
+  text-align: center;
+}
+
+
+#wheretogo {
+  background: #f4f4f4;
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+#wheretogo h2 {
+  margin-top: 0;
+}
+
+
+
+.activity-bar {
+  background: #f4f4f4;
+  padding: 32px;
+}

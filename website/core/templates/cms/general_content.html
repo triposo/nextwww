@@ -1,0 +1,18 @@
+{% extends "base_section.html" %}
+{% load cms_tags %}
+
+{% block section_content %}
+
+<div class="row-fluid">
+  <div class="span8">
+      {% placeholder general_content %}
+  </div>
+  <div class="span4">
+      {% placeholder side_content %}
+  </div>
+</div>
+
+
+
+  
+{% endblock %}

@@ -52,7 +52,7 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = os.path.join(PROJECT_PATH, "core/static")
+STATIC_ROOT = os.path.join(PROJECT_PATH, "static")
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
@@ -60,21 +60,22 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
+    os.path.join(PROJECT_PATH, "core/static"),
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 )
 
-ADMIN_MEDIA_PREFIX = "/core/static/admin/"
+ADMIN_MEDIA_PREFIX = "/static/admin/"
 MEDIA_ROOT = os.path.join(PROJECT_PATH, "core/media")
-MEDIA_URL = "/core/media/"
+MEDIA_URL = "/media/"
 
 # List of finder classes that know how to find static files in
 # various locations.
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-#    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
 # Make this unique, and don't share it with anybody.
@@ -121,12 +122,14 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 CMS_TEMPLATES = (
     ('template_1.html', 'Template One'),
     ('template_2.html', 'Template Two'),
+    ('cms/home.html', 'Home'),
+    ('cms/general_content.html', 'General Content'),
 )
 LANGUAGE_CODE = 'en-us'
 
-#LANGUAGES = [
-#    ('en', 'English'),
-#]
+LANGUAGES = [
+    ('en', 'English'),
+]
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -157,6 +160,7 @@ INSTALLED_APPS = (
     'reversion',
     'zinnia',
     'cmsplugin_zinnia',
+
 )
 
 
@@ -188,3 +192,9 @@ LOGGING = {
         },
     }
 }
+
+
+# ZINNIA SETTINGS ---------------------------------------------------
+
+
+

@@ -1,0 +1,36 @@
+
+
+
+h2.entry-title, h2.entry-title a {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 48px;
+  color: #05212e;
+}
+
+p.entry-info {
+  color: #bdbdbd;
+  margin-bottom: 16px;
+}
+
+p.entry-info a{
+  color: #655f5c;
+}
+
+
+.hentry {
+  padding-bottom: 32px;
+  border-bottom: 1px solid #c4c4c4;
+  margin-bottom: 32px;
+}
+
+
+
+.entry-footer {
+  display: none;
+}
+
+
+form.navbar-search {
+  margin-top: 14px;
+}

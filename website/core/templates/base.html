@@ -2,25 +2,106 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap 101 Template</title>
+    <title>Triposo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="{{ STATIC_URL }}bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href="{{ STATIC_URL }}bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="{{ STATIC_URL }}css/master.css" rel="stylesheet" />
+    {% block "headercss" %}{% endblock %}
+
     {% render_block "css" %}
+
+    {% block link %}{% endblock %}
   </head>
   <body>
-    {% cms_toolbar %}
-<ul>
-    {% show_menu 0 100 100 100 %}
-</ul>
 
-      {% placeholder base_content %}
-      {% block base_content%}{% endblock %}
-      
+  
 
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
+  <div id="navbar">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span8">
+          <a class="logo" href="/"><img src="{{ STATIC_URL }}img/triposo_logo_small_white.png" /></a>
+          <ul class="nav">
+            {% show_menu 0 0 0 0 %}
+            <li><a href="/wander">Blog</a></li>
+            <li><a href="/guide">Destinations</a></li>
+            <li><a href="http://labs.triposo.com">Labs</a></li>
+          </ul>
+        </div>
+        <div class="span4">
+          <div class="profile">
+            <a href="#" class="btn">sign in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
     
-    {% render_block "js" %}
+  {% block base_content%}{% endblock %}
+    
+  <div id="footer">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span4">
+          <h3>Download Triposo</h3>
+          <a href="#" class="list-link download">App Store</a>
+          <a href="#" class="list-link download">Google Play</a/>
+
+        </div>
+
+        <div class="span4">
+          <h3>Where to find us</h3>
+          <a href="http://www.facebook.com/pages/Triposo/116421401729382" target="_blank"><img src="{{ STATIC_URL }}/img/facebook.png" /></a>
+          <a href="http://twitter.com/triposo" target="_blank"><img src="{{ STATIC_URL }}/img/twitter.png" /></a>
+          <a href="http://www.youtube.com/user/triposolabs" target="_blank"><img src="{{ STATIC_URL }}/img/youtube.png" /></a>
+          <a href="#" target="_blank"><img src="{{ STATIC_URL }}/img/pinterest.png" /></a>
+        </div>
+
+        <div class="span4">
+          <h3>Contact us</h3>
+          <p>
+            <a href="mailto:feedback@triposo.com">feedback@triposo.com</a>
+          </p>
+          <h3>Berlin Office</h3>
+          <p>
+            Triposo GmbH<br />
+            Mehringdamm 72<br />
+            10961 <a href="http://www.triposo.com/loc/Berlin">Berlin</a><br />
+            <a href="http://www.triposo.com/loc/Germany">Germany</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="sitemap">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span3">
+          &nbsp;
+        </div>
+        <div class="span3">
+          &nbsp;
+        </div>
+        <div class="span3">
+          &nbsp;
+        </div>
+        <div class="span3">
+          &nbsp;
+        </div>
+      </div>
+  </div>
+
+
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="{{ STATIC_URL }}bootstrap/js/bootstrap.min.js"></script>
+  
+  {% render_block "js" %}
+  {% block "footerjs" %}{% endblock %}
+
+    
   </body>
 </html>
