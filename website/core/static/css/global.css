@@ -46,6 +46,28 @@ ul.nav li.ancestor a, ul.nav li.selected a{
 }
 
 
+
+#hero {
+  background: #dfdfdc;
+  height: 590px;
+  overflow: hidden;
+  position: relative;
+}
+
+#hero.small {
+    height: 96px;
+}
+
+#hero .photo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  display: block;
+  max-width: none;
+}
+
+
 #navsub {
   background: #f4f4f4;
   height: 58px;

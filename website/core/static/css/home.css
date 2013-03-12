@@ -1,20 +1,5 @@
 
 
-#hero {
-  background: #dfdfdc;
-  height: 590px;
-  overflow: hidden;
-  position: relative;
-}
-
-#hero .photo {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  display: block;
-  max-width: none;
-}
 
 #hero .tagline {
   position: absolute;
