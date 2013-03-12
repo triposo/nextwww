@@ -60,14 +60,14 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_PATH, "core/static"),
+    os.path.join(PROJECT_PATH, "website/static"),
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 )
 
 ADMIN_MEDIA_PREFIX = "/static/admin/"
-MEDIA_ROOT = os.path.join(PROJECT_PATH, "core/media")
+MEDIA_ROOT = os.path.join(PROJECT_PATH, "website/media")
 MEDIA_URL = "/media/"
 
 # List of finder classes that know how to find static files in
@@ -105,7 +105,7 @@ ROOT_URLCONF = 'website.urls'
 WSGI_APPLICATION = 'website.wsgi.application'
 
 TEMPLATE_DIRS = (
-    os.path.join(PROJECT_PATH, "core/templates"),
+    os.path.join(PROJECT_PATH, "templates/website"),
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -120,8 +120,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 CMS_TEMPLATES = (
-    ('template_1.html', 'Template One'),
-    ('template_2.html', 'Template Two'),
     ('cms/home.html', 'Home'),
     ('cms/general_content.html', 'General Content'),
 )
