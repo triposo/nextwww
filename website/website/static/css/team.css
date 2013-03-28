@@ -1,0 +1,11 @@
+
+
+.team-members .plugin {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+
+.team-members .plugin .plugin_picture {
+  float: left;
+}

@@ -122,6 +122,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 CMS_TEMPLATES = (
     ('cms/home.html', 'Home'),
     ('cms/general_content.html', 'General Content'),
+    ('cms/team.html', 'Team page'),
 )
 LANGUAGE_CODE = 'en-us'
 

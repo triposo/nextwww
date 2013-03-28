@@ -1,0 +1,30 @@
+{% extends "base_section.html" %}
+{% load cms_tags %}
+
+{% block "headercss" %}
+    <link href="{{ STATIC_URL }}css/team.css" rel="stylesheet" />
+{% endblock %}
+
+{% block section_content %}
+
+<div class="row-fluid">
+  <div class="span6">
+      {% placeholder team_intro %}
+  </div>
+  <div class="span6">
+      {% placeholder team_photo %}
+  </div>
+</div>
+
+<div class="row-fluid">
+  <div class="span8 team-members">
+      {% placeholder team_members %}
+  </div>
+  <div class="span4">
+      {% placeholder team_twitter %}
+  </div>
+</div>
+
+
+  
+{% endblock %}  
