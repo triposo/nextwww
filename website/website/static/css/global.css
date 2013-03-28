@@ -1,12 +1,24 @@
-
 body {
-  
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	background: #f7f7f7;
+}
+
+a:link, a:visited {
+  color:#2299d4;
+  text-decoration:none;
+}
+
+a:hover {
+  color:#000000;
 }
 
 #navbar {
-  height: 58px;
-  background-color: #312f2e;
+  height: 100px;
+  background-color: #f7f7f7;
 }
+
 .navbar-inverse .navbar-inner {
   background: transparent;
 }
@@ -14,57 +26,66 @@ body {
 a.logo {
   display: block;
   float: left;
-  width: 32px;
-  height: 32px;
-  margin: 12px 22px 0 0;
+  margin: 30px 0 0 0;
+}
+
+input.field {
+  height:35px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #999999;
+  width: 70%;
 }
 
 ul.nav {
-  margin-top: 18px;
-  float: left;
-  overflow: hidden;
-}
-ul.nav li {
-  float: left;
-  margin-right: 16px;
+  margin-top: 40px;
+  margin-right:72px;
+  text-align: right;
 }
 
-ul.nav li a {
-  color: #948f8c;
+ul.nav li {
+  margin-right: 16px;
+  display: inline-block;
+  list-style-type: none;
+}
+
+ul.nav li a,
+ul.nav li a:visited {
+  color: #333333;
   font-size: 1em;
 }
 
-
 ul.nav li.ancestor a, ul.nav li.selected a{
-  color: #eff0ea;
+  color: #2299d4;
   text-decoration: none;
+}
+
+ul.nav li a:hover {
+  color: #2299d4;
+  background: none;
+  font-size: 1em;
+  border: 0 none;
+}
+
+ul.signin {
+	list-style-type: none;
+}
+
+ul.signin li a {
+	margin-top:-54px;
+	float: right;
+}
+
+ul.signin li a:hover {
+	margin-top:-54px;
+	float: right;
 }
 
 #navbar .profile {
   text-align: right;
   padding-top: 14px;
-}
-
-
-
-#hero {
-  background: #dfdfdc;
-  height: 590px;
-  overflow: hidden;
-  position: relative;
-}
-
-#hero.small {
-    height: 96px;
-}
-
-#hero .photo {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  display: block;
-  max-width: none;
 }
 
 
@@ -95,27 +116,21 @@ ul.nav li.ancestor a, ul.nav li.selected a{
 
 
 #footer {
-  background-color: #312f2e;
+  background-color: #EFEEEB;
+  color: #000;
   padding: 32px 0 32px 0;
 }
 
 #footer h3, #footer p, #footer a {
-  color: #c7c8c4;
+  font-weight: 300;
 }
 
 #footer h3 {
-  font-size: 18px;
-  font-weight: 100;
-  text-transform: uppercase;
   margin: 0 0 4px 0;
 }
 
-#footer a {
-  color: #eff0ea;
-}
-
 #footer p {
-  color: #eff0ea;
+  color: #000;
 }
 
 a.list-link {

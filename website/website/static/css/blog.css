@@ -1,11 +1,10 @@
-
-
-
 h2.entry-title, h2.entry-title a {
-  margin-top: 0;
-  margin-bottom: 8px;
-  font-size: 48px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 50px;
   color: #05212e;
+  line-height: 60px;
+  font-weight: 300;
 }
 
 p.entry-info {
@@ -20,11 +19,9 @@ p.entry-info a{
 
 .hentry {
   padding-bottom: 32px;
-  border-bottom: 1px solid #c4c4c4;
-  margin-bottom: 32px;
+  border-bottom: 1px dotted #cccccc;
+  margin-bottom: 90px;
 }
-
-
 
 .entry-footer {
   display: none;
@@ -33,4 +30,8 @@ p.entry-info a{
 
 form.navbar-search {
   margin-top: 14px;
+}
+
+.continue-reading{
+  text-align: right;
 }

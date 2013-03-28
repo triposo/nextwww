@@ -1,52 +1,71 @@
+#mainimage {
+  background: url("../img/image.jpg") no-repeat top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 50px;
+}
 
-
+#hero {
+  height: 590px;
+  overflow: hidden;
+  position: relative;
+  z-index: 100;
+}
 
 #hero .tagline {
   position: absolute;
-  left: 50%;
-  top: 20%;
-  z-index: 2;
-  width: 450px;
-  margin-left: -225px;
+  top: 33%;
+  width: 100%;
+  text-align: center;
 }
 
 #hero .tagline h1 {
   color: #fff;
-  text-align: center;
-  font-size: 56px;
-  line-height: 60px;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding-bottom: 8px;
-  border-bottom: 2px solid #fff;
-}
-
-#hero .tagline h2 {
-  color: #fff;
-  text-align: center;
-  font-size: 24px;
-  line-height: 38px;
-  font-weight: 100;
+  font-size: 45px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+  margin-bottom: 50px;
 }
 
 #hero .cta {
   text-align: center;
 }
 
+.btnmargin{
+  margin-right:40px;
+}
 
 #wheretogo {
-  background: #f4f4f4;
+  background-color: rgba(255, 255, 255, 0.92);
   padding: 32px;
-  margin-bottom: 32px;
+  color: #000000;
+  z-index: 100;
+  position: relative;
 }
 
 #wheretogo h2 {
   margin-top: 0;
 }
 
+#wheretogo h2 a {
+  color: #000000;
+}
 
+#wheretogo .btn {
+  height: 46px;
+  width: 25%;
+  margin-top: 4px;
+}
 
 .activity-bar {
-  background: #f4f4f4;
+  background: #efeeeb;
   padding: 32px;
+  margin-top: 40px;
+}
+
+.sumup {
+	list-style-type:square;
 }

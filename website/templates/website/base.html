@@ -16,24 +16,21 @@
   </head>
   <body>
 
-  
 
   <div id="navbar">
     <div class="container">
-      <div class="row-fluid">
-        <div class="span8">
-          <a class="logo" href="/"><img src="{{ STATIC_URL }}img/triposo_logo_small_white.png" /></a>
+      <div class="row-fluid header">
+        <div class="span12">
+          <a class="logo" href="#"><img src="{{ STATIC_URL }}img/triposo.svg" width="140">
           <ul class="nav">
-            {% show_menu 0 0 0 0 %}
-            <li><a href="/wander">Blog</a></li>
+			{% show_menu 0 0 0 0 %}
+			 <li><a href="/wander">Blog</a></li>
             <li><a href="/guide">Destinations</a></li>
-            <li><a href="http://labs.triposo.com">Labs</a></li>
+            <li><a href="http://labs.triposo.com/">Labs</a></li>
           </ul>
-        </div>
-        <div class="span4">
-          <div class="profile">
-            <a href="#" class="btn">sign in</a>
-          </div>
+          <ul class="signin">
+          	<li><a href="#" class="btn">sign in</a></li>
+          </ul>
         </div>
       </div>
     </div>

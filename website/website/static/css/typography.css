@@ -1,15 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
-}
-
-h2, h2 a {
-  font-size: 40px;
-  color: #312f2e;
-}
-
-h3, h3 a {
-  margin-top: 0;
+h1,h2,h3,h4,h5,h6{
+	font-size: 25px;
+	font-weight: 400;
 }
